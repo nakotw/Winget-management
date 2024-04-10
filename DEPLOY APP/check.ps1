@@ -11,6 +11,6 @@ if (!$winget_exe){
 }else{
     $wingetPrg_Existing = & $winget_exe list --id $ProgramName --exact --accept-source-agreements
         if ($wingetPrg_Existing -like "*$ProgramName*"){
-        Write-Host "Found it! 2"
+        Write-Host "Found it!"
     }
 }
